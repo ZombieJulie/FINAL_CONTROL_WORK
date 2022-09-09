@@ -10,7 +10,7 @@ string[] secondArray = FillSecondArray(firstArray, secArrLength);
 
 void PrintArray(string[] inArray)
 {
-    for (int i = 0; i < inArray.GetLength(0); i++)
+    for (int i = 0; i < inArray.Length; i++)
     {
         Console.Write($"{inArray[i]} ");
     }
@@ -46,7 +46,6 @@ string[] FillSecondArray(string[] array, int len)
 Console.Write("[ ");
 PrintArray(firstArray);
 Console.Write(" ]");
-GetLengthSecondArray(firstArray);
 Console.WriteLine();
 Console.Write("[ ");
 PrintArray(secondArray);
